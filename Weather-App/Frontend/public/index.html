@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Advanced Weather Forecast Website" />
+    <title>WeatherWise</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/weather-icon.png" type="image/png" />
+</head>
+<body>
+<header>
+    <div class="logo">🌤️ WeatherWise</div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Forecast</a></li>
+            <li><a href="#">Radar</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="search-section">
+        <h1>Check Your Local Weather</h1>
+        <div class="search-bar">
+            <input type="text" id="cityInput" placeholder="Enter city name..." />
+            <button id="searchBtn">Search</button>
+        </div>
+    </section>
+
+    <section id="weatherDisplay" class="weather-display hidden">
+        <div class="current-weather">
+            <h2 id="cityName">City Name</h2>
+            <p id="temperature">Temperature: -- °C</p>
+            <p id="description">Weather: --</p>
+            <img id="weatherIcon" src="" alt="Weather Icon" />
+        </div>
+
+        <div class="forecast">
+            <h3>5-Day Forecast</h3>
+            <div id="forecastContainer" class="forecast-container">
+                <!-- JS will inject daily forecast cards here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="errorMessage" class="error-message hidden">
+        <p>⚠️ Could not fetch weather data. Please try again.</p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 WeatherWise | Built with ☀️ + ☁️ + ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
