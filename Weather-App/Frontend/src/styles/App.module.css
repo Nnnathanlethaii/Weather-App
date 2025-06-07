@@ -1,0 +1,43 @@
+/* frontend/src/styles/App.module.css */
+.container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0.5rem 0;
+}
+
+.unitToggle {
+  margin-top: 0.5rem;
+}
+
+.unitToggle button {
+  margin: 0 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #0077cc;
+  background: white;
+  color: #0077cc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.unitToggle button.active {
+  background: #0077cc;
+  color: white;
+}
+
+.error {
+  max-width: 500px;
+  margin: 1rem auto;
+  color: #b00020;
+  font-weight: bold;
+  text-align: center;
+}
