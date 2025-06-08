@@ -1,0 +1,36 @@
+/* frontend/src/styles/ForecastChart.module.css */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.iconsRow {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.dayIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dayIcon img {
+  width: 40px;
+  height: 40px;
+}
+
+.dayIcon span {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+}
